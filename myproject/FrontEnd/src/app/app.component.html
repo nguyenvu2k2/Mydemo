@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <tr>
+      <th>Mã khoa</th>
+      <th>Tên khoa</th>
+      <th>Năm thành lập</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for( khoa of data; track khoa.MAKHOA){
+      <tr>
+        <td>{{ khoa.MAKHOA }}</td>
+        <td>{{ khoa.TENKHOA }}</td>
+        <td>{{ khoa.NAMTHANHLAP}}</td>
+        <td>
+          <button>Edit</button>
+          <button>Delete</button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
+<router-outlet />
+<router-outlet />
